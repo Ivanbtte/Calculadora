@@ -43,12 +43,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtMonto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.dtpInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpFin = new System.Windows.Forms.DateTimePicker();
+            this.lblInicio = new System.Windows.Forms.Label();
+            this.lblFin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCapital
             // 
             this.lblCapital.AutoSize = true;
-            this.lblCapital.Location = new System.Drawing.Point(186, 58);
+            this.lblCapital.Location = new System.Drawing.Point(282, 57);
             this.lblCapital.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCapital.Name = "lblCapital";
             this.lblCapital.Size = new System.Drawing.Size(63, 20);
@@ -58,7 +62,7 @@
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(186, 279);
+            this.lblTiempo.Location = new System.Drawing.Point(282, 278);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(66, 20);
             this.lblTiempo.TabIndex = 1;
@@ -67,7 +71,7 @@
             // lblInteres
             // 
             this.lblInteres.AutoSize = true;
-            this.lblInteres.Location = new System.Drawing.Point(186, 138);
+            this.lblInteres.Location = new System.Drawing.Point(282, 137);
             this.lblInteres.Name = "lblInteres";
             this.lblInteres.Size = new System.Drawing.Size(60, 20);
             this.lblInteres.TabIndex = 2;
@@ -76,7 +80,7 @@
             // txtCapital
             // 
             this.txtCapital.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCapital.Location = new System.Drawing.Point(136, 95);
+            this.txtCapital.Location = new System.Drawing.Point(232, 94);
             this.txtCapital.Name = "txtCapital";
             this.txtCapital.Size = new System.Drawing.Size(161, 27);
             this.txtCapital.TabIndex = 3;
@@ -84,15 +88,16 @@
             // txtInteres
             // 
             this.txtInteres.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInteres.Location = new System.Drawing.Point(136, 224);
+            this.txtInteres.Location = new System.Drawing.Point(232, 223);
             this.txtInteres.Name = "txtInteres";
             this.txtInteres.Size = new System.Drawing.Size(161, 27);
             this.txtInteres.TabIndex = 4;
             // 
             // txtTiempo
             // 
+            this.txtTiempo.Enabled = false;
             this.txtTiempo.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTiempo.Location = new System.Drawing.Point(136, 398);
+            this.txtTiempo.Location = new System.Drawing.Point(232, 397);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(161, 27);
             this.txtTiempo.TabIndex = 5;
@@ -110,13 +115,14 @@
             "Cuatrimestral",
             "Semestral",
             "Anual"});
-            this.cmbInteres.Location = new System.Drawing.Point(136, 174);
+            this.cmbInteres.Location = new System.Drawing.Point(232, 173);
             this.cmbInteres.Name = "cmbInteres";
             this.cmbInteres.Size = new System.Drawing.Size(161, 28);
             this.cmbInteres.TabIndex = 6;
             // 
             // cmbTiempo
             // 
+            this.cmbTiempo.Enabled = false;
             this.cmbTiempo.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTiempo.FormattingEnabled = true;
             this.cmbTiempo.Items.AddRange(new object[] {
@@ -127,7 +133,7 @@
             "Cuatrimestres",
             "Semestres",
             "Años"});
-            this.cmbTiempo.Location = new System.Drawing.Point(136, 353);
+            this.cmbTiempo.Location = new System.Drawing.Point(232, 352);
             this.cmbTiempo.Name = "cmbTiempo";
             this.cmbTiempo.Size = new System.Drawing.Size(161, 28);
             this.cmbTiempo.TabIndex = 7;
@@ -136,7 +142,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(136, 312);
+            this.radioButton1.Location = new System.Drawing.Point(232, 311);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(47, 19);
             this.radioButton1.TabIndex = 8;
@@ -148,7 +154,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(225, 312);
+            this.radioButton2.Location = new System.Drawing.Point(321, 311);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(72, 19);
             this.radioButton2.TabIndex = 9;
@@ -159,7 +165,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(101, 527);
+            this.btnCalcular.Location = new System.Drawing.Point(197, 546);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(83, 29);
             this.btnCalcular.TabIndex = 10;
@@ -170,7 +176,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(225, 527);
+            this.btnRegresar.Location = new System.Drawing.Point(321, 546);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(83, 29);
             this.btnRegresar.TabIndex = 11;
@@ -180,7 +186,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(296, 231);
+            this.label1.Location = new System.Drawing.Point(392, 230);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(22, 20);
             this.label1.TabIndex = 12;
@@ -191,7 +197,7 @@
             // 
             this.txtMonto.Enabled = false;
             this.txtMonto.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMonto.Location = new System.Drawing.Point(136, 462);
+            this.txtMonto.Location = new System.Drawing.Point(232, 481);
             this.txtMonto.Name = "txtMonto";
             this.txtMonto.Size = new System.Drawing.Size(161, 27);
             this.txtMonto.TabIndex = 13;
@@ -199,17 +205,59 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 439);
+            this.label2.Location = new System.Drawing.Point(282, 438);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 20);
             this.label2.TabIndex = 14;
             this.label2.Text = "Monto:";
             // 
+            // dtpInicio
+            // 
+            this.dtpInicio.Enabled = false;
+            this.dtpInicio.Location = new System.Drawing.Point(123, 397);
+            this.dtpInicio.Name = "dtpInicio";
+            this.dtpInicio.Size = new System.Drawing.Size(200, 27);
+            this.dtpInicio.TabIndex = 17;
+            this.dtpInicio.Visible = false;
+            // 
+            // dtpFin
+            // 
+            this.dtpFin.Enabled = false;
+            this.dtpFin.Location = new System.Drawing.Point(351, 397);
+            this.dtpFin.Name = "dtpFin";
+            this.dtpFin.Size = new System.Drawing.Size(200, 27);
+            this.dtpFin.TabIndex = 18;
+            this.dtpFin.Visible = false;
+            // 
+            // lblInicio
+            // 
+            this.lblInicio.AutoSize = true;
+            this.lblInicio.Location = new System.Drawing.Point(157, 360);
+            this.lblInicio.Name = "lblInicio";
+            this.lblInicio.Size = new System.Drawing.Size(123, 20);
+            this.lblInicio.TabIndex = 19;
+            this.lblInicio.Text = "Fecha de inicio";
+            this.lblInicio.Visible = false;
+            // 
+            // lblFin
+            // 
+            this.lblFin.AutoSize = true;
+            this.lblFin.Location = new System.Drawing.Point(367, 360);
+            this.lblFin.Name = "lblFin";
+            this.lblFin.Size = new System.Drawing.Size(169, 20);
+            this.lblFin.TabIndex = 20;
+            this.lblFin.Text = "Fecha de finalización";
+            this.lblFin.Visible = false;
+            // 
             // MontoSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 596);
+            this.ClientSize = new System.Drawing.Size(629, 661);
+            this.Controls.Add(this.lblFin);
+            this.Controls.Add(this.lblInicio);
+            this.Controls.Add(this.dtpFin);
+            this.Controls.Add(this.dtpInicio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.label1);
@@ -252,5 +300,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMonto;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
+        private System.Windows.Forms.DateTimePicker dtpFin;
+        private System.Windows.Forms.Label lblInicio;
+        private System.Windows.Forms.Label lblFin;
     }
 }
