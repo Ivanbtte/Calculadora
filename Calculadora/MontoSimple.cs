@@ -13,6 +13,7 @@ namespace Calculadora
     public partial class MontoSimple : Form
     {
         double interes;
+        double monto;
 
         public MontoSimple()
         {
@@ -38,7 +39,7 @@ namespace Calculadora
             {
                 case "Diario":
 
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = Double.Parse(txtInteres.Text) / 100;
@@ -68,7 +69,7 @@ namespace Calculadora
 
                     break;
                 case "Mensual":
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = (Double.Parse(txtInteres.Text) / 100)/30;
@@ -97,7 +98,7 @@ namespace Calculadora
                     }
                     break;
                 case "Bimestral":
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = (Double.Parse(txtInteres.Text) / 100) / 60;
@@ -126,7 +127,7 @@ namespace Calculadora
                     }
                     break;
                 case "Trimestral":
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = (Double.Parse(txtInteres.Text) / 100) / 90;
@@ -155,7 +156,7 @@ namespace Calculadora
                     }
                     break;
                 case "Cuatrimestral":
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = (Double.Parse(txtInteres.Text) / 100) / 120;
@@ -184,7 +185,7 @@ namespace Calculadora
                     }
                     break;
                 case "Semestral":
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = (Double.Parse(txtInteres.Text) / 100) / 180;
@@ -213,7 +214,7 @@ namespace Calculadora
                     }
                     break;
                 case "Anual":
-                    switch (tInteres)
+                    switch (tiempo)
                     {
                         case "Días":
                             interes = (Double.Parse(txtInteres.Text) / 100) / 360;
@@ -245,6 +246,12 @@ namespace Calculadora
                     Console.WriteLine("Opción no reconocida. Por favor, introduce una opción válida.");
                     break;
             }
+
+            monto = Convert.ToInt32(txtCapital.Text) + interes;
+            monto = Convert.ToInt32(txtCapital.Text)*(1+(interes * Convert.ToInt32(txtTiempo.Text)));
+            txtMonto.Text = ""+monto;
+            MessageBox.Show(monto.ToString());
         }
+
     }
 }

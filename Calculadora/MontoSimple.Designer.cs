@@ -41,6 +41,8 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtMonto = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblCapital
@@ -157,7 +159,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(111, 459);
+            this.btnCalcular.Location = new System.Drawing.Point(101, 527);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(83, 29);
             this.btnCalcular.TabIndex = 10;
@@ -168,7 +170,7 @@
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(235, 459);
+            this.btnRegresar.Location = new System.Drawing.Point(225, 527);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(83, 29);
             this.btnRegresar.TabIndex = 11;
@@ -185,11 +187,31 @@
             this.label1.Text = "%";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // txtMonto
+            // 
+            this.txtMonto.Enabled = false;
+            this.txtMonto.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMonto.Location = new System.Drawing.Point(136, 462);
+            this.txtMonto.Name = "txtMonto";
+            this.txtMonto.Size = new System.Drawing.Size(161, 27);
+            this.txtMonto.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(186, 439);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 20);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Monto:";
+            // 
             // MontoSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 523);
+            this.ClientSize = new System.Drawing.Size(425, 596);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCalcular);
@@ -228,5 +250,7 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMonto;
+        private System.Windows.Forms.Label label2;
     }
 }
