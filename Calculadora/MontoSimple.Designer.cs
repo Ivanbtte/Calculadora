@@ -36,8 +36,8 @@
             this.txtTiempo = new System.Windows.Forms.TextBox();
             this.cmbInteres = new System.Windows.Forms.ComboBox();
             this.cmbTiempo = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rdbReal = new System.Windows.Forms.RadioButton();
+            this.rdbEstimado = new System.Windows.Forms.RadioButton();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.txtCapital.Location = new System.Drawing.Point(232, 94);
             this.txtCapital.Name = "txtCapital";
             this.txtCapital.Size = new System.Drawing.Size(161, 27);
-            this.txtCapital.TabIndex = 3;
+            this.txtCapital.TabIndex = 0;
             // 
             // txtInteres
             // 
@@ -91,7 +91,7 @@
             this.txtInteres.Location = new System.Drawing.Point(232, 223);
             this.txtInteres.Name = "txtInteres";
             this.txtInteres.Size = new System.Drawing.Size(161, 27);
-            this.txtInteres.TabIndex = 4;
+            this.txtInteres.TabIndex = 2;
             // 
             // txtTiempo
             // 
@@ -100,7 +100,7 @@
             this.txtTiempo.Location = new System.Drawing.Point(232, 397);
             this.txtTiempo.Name = "txtTiempo";
             this.txtTiempo.Size = new System.Drawing.Size(161, 27);
-            this.txtTiempo.TabIndex = 5;
+            this.txtTiempo.TabIndex = 6;
             // 
             // cmbInteres
             // 
@@ -118,10 +118,11 @@
             this.cmbInteres.Location = new System.Drawing.Point(232, 173);
             this.cmbInteres.Name = "cmbInteres";
             this.cmbInteres.Size = new System.Drawing.Size(161, 28);
-            this.cmbInteres.TabIndex = 6;
+            this.cmbInteres.TabIndex = 1;
             // 
             // cmbTiempo
             // 
+            this.cmbTiempo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTiempo.Enabled = false;
             this.cmbTiempo.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTiempo.FormattingEnabled = true;
@@ -136,52 +137,59 @@
             this.cmbTiempo.Location = new System.Drawing.Point(232, 352);
             this.cmbTiempo.Name = "cmbTiempo";
             this.cmbTiempo.Size = new System.Drawing.Size(161, 28);
-            this.cmbTiempo.TabIndex = 7;
+            this.cmbTiempo.TabIndex = 5;
             // 
-            // radioButton1
+            // rdbReal
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(232, 311);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 19);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Real";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbReal.AutoSize = true;
+            this.rdbReal.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbReal.Location = new System.Drawing.Point(232, 311);
+            this.rdbReal.Name = "rdbReal";
+            this.rdbReal.Size = new System.Drawing.Size(47, 19);
+            this.rdbReal.TabIndex = 3;
+            this.rdbReal.TabStop = true;
+            this.rdbReal.Text = "Real";
+            this.rdbReal.UseVisualStyleBackColor = true;
+            this.rdbReal.CheckedChanged += new System.EventHandler(this.rdbReal_CheckedChanged);
             // 
-            // radioButton2
+            // rdbEstimado
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(321, 311);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 19);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Estimado";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbEstimado.AutoSize = true;
+            this.rdbEstimado.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbEstimado.Location = new System.Drawing.Point(321, 311);
+            this.rdbEstimado.Name = "rdbEstimado";
+            this.rdbEstimado.Size = new System.Drawing.Size(72, 19);
+            this.rdbEstimado.TabIndex = 4;
+            this.rdbEstimado.TabStop = true;
+            this.rdbEstimado.Text = "Estimado";
+            this.rdbEstimado.UseVisualStyleBackColor = true;
+            this.rdbEstimado.CheckedChanged += new System.EventHandler(this.rdbEstimado_CheckedChanged);
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(145)))), ((int)(((byte)(149)))));
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCalcular.Location = new System.Drawing.Point(197, 546);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(83, 29);
-            this.btnCalcular.TabIndex = 10;
+            this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnRegresar
             // 
+            this.btnRegresar.BackColor = System.Drawing.Color.IndianRed;
             this.btnRegresar.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnRegresar.Location = new System.Drawing.Point(321, 546);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(83, 29);
-            this.btnRegresar.TabIndex = 11;
+            this.btnRegresar.TabIndex = 10;
             this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // label1
             // 
@@ -214,10 +222,10 @@
             // dtpInicio
             // 
             this.dtpInicio.Enabled = false;
-            this.dtpInicio.Location = new System.Drawing.Point(123, 397);
+            this.dtpInicio.Location = new System.Drawing.Point(107, 397);
             this.dtpInicio.Name = "dtpInicio";
-            this.dtpInicio.Size = new System.Drawing.Size(200, 27);
-            this.dtpInicio.TabIndex = 17;
+            this.dtpInicio.Size = new System.Drawing.Size(218, 27);
+            this.dtpInicio.TabIndex = 7;
             this.dtpInicio.Visible = false;
             // 
             // dtpFin
@@ -225,8 +233,8 @@
             this.dtpFin.Enabled = false;
             this.dtpFin.Location = new System.Drawing.Point(351, 397);
             this.dtpFin.Name = "dtpFin";
-            this.dtpFin.Size = new System.Drawing.Size(200, 27);
-            this.dtpFin.TabIndex = 18;
+            this.dtpFin.Size = new System.Drawing.Size(216, 27);
+            this.dtpFin.TabIndex = 8;
             this.dtpFin.Visible = false;
             // 
             // lblInicio
@@ -253,6 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(629, 661);
             this.Controls.Add(this.lblFin);
             this.Controls.Add(this.lblInicio);
@@ -263,8 +272,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rdbEstimado);
+            this.Controls.Add(this.rdbReal);
             this.Controls.Add(this.cmbTiempo);
             this.Controls.Add(this.cmbInteres);
             this.Controls.Add(this.txtTiempo);
@@ -293,8 +302,8 @@
         private System.Windows.Forms.TextBox txtTiempo;
         private System.Windows.Forms.ComboBox cmbInteres;
         private System.Windows.Forms.ComboBox cmbTiempo;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rdbReal;
+        private System.Windows.Forms.RadioButton rdbEstimado;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Label label1;

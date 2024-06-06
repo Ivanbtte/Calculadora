@@ -37,8 +37,10 @@ namespace Calculadora
 
         private void tiempoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             TiempoSimple tiempoSimple = new TiempoSimple();
             tiempoSimple.Show();
+            this.Visible = false;
         }
     }
 }
