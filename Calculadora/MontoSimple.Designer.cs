@@ -222,18 +222,20 @@
             // dtpInicio
             // 
             this.dtpInicio.Enabled = false;
+            this.dtpInicio.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpInicio.Location = new System.Drawing.Point(107, 397);
             this.dtpInicio.Name = "dtpInicio";
-            this.dtpInicio.Size = new System.Drawing.Size(218, 27);
+            this.dtpInicio.Size = new System.Drawing.Size(218, 23);
             this.dtpInicio.TabIndex = 7;
             this.dtpInicio.Visible = false;
             // 
             // dtpFin
             // 
             this.dtpFin.Enabled = false;
+            this.dtpFin.Font = new System.Drawing.Font("Segoe UI Emoji", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFin.Location = new System.Drawing.Point(351, 397);
             this.dtpFin.Name = "dtpFin";
-            this.dtpFin.Size = new System.Drawing.Size(216, 27);
+            this.dtpFin.Size = new System.Drawing.Size(216, 23);
             this.dtpFin.TabIndex = 8;
             this.dtpFin.Visible = false;
             // 
