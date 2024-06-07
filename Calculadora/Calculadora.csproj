@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapitalCompuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapitalCompuesto.Designer.cs">
+      <DependentUpon>CapitalCompuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="CapitalSimple.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="TiempoSimple.Designer.cs">
       <DependentUpon>TiempoSimple.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CapitalCompuesto.resx">
+      <DependentUpon>CapitalCompuesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapitalSimple.resx">
       <DependentUpon>CapitalSimple.cs</DependentUpon>
     </EmbeddedResource>

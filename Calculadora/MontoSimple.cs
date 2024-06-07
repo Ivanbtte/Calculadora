@@ -302,7 +302,7 @@ namespace Calculadora
                         break;
                 }
 
-                monto = Convert.ToInt32(txtCapital.Text) * (1 + (interes * Convert.ToInt32(txtTiempo.Text)));
+                monto = Convert.ToDouble(txtCapital.Text) * (1 + (interes * Convert.ToInt32(txtTiempo.Text)));
                 txtMonto.Text = "" + monto;
             }
             else if (rdbReal.Checked)
@@ -340,7 +340,7 @@ namespace Calculadora
                         break;
                 }
 
-                monto = Convert.ToInt32(txtCapital.Text) * (1 + (interes * tiempoReal));
+                monto = Convert.ToDouble(txtCapital.Text) * (1 + (interes * tiempoReal));
                 txtMonto.Text = "" + monto;
             }
 

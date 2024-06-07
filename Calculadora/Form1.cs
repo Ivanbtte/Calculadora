@@ -52,5 +52,12 @@ namespace Calculadora
             montoCompuesto.Show();
             this.Hide();
         }
+
+        private void capitalToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            CapitalCompuesto capitalCompuesto = new CapitalCompuesto();
+            capitalCompuesto.Show();
+            this.Hide();
+        }
     }
 }
