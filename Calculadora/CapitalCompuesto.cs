@@ -5,27 +5,26 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class MontoCompuesto : Form
+    public partial class CapitalCompuesto : Form
     {
 
         double interes;
-        double monto;
+        double capital;
         string tInteres;
 
-        public MontoCompuesto()
+        public CapitalCompuesto()
         {
             InitializeComponent();
         }
 
         private void limpiar()
         {
-            txtCapital.Clear();
+            txtMonto.Clear();
             cmbInteres.SelectedIndex = 0;
             txtInteres.Clear();
             txtTiempo.Clear();
@@ -37,7 +36,7 @@ namespace Calculadora
             // Verificar todos los TextBox, excepto txtMonto
             foreach (Control control in this.Controls)
             {
-                if (control is TextBox && control != txtMonto)
+                if (control is TextBox && control != txtCapital)
                 {
                     TextBox textBox = control as TextBox;
                     if (string.IsNullOrWhiteSpace(textBox.Text))
@@ -277,9 +276,10 @@ namespace Calculadora
                     break;
             }
 
-            monto = Convert.ToDouble(txtCapital.Text) * Math.Pow(1 + interes, Convert.ToInt32(txtTiempo.Text));
-            txtMonto.Text = "" + monto;
+            capital = Convert.ToDouble(txtMonto.Text) / Math.Pow(1 + interes, Convert.ToDouble(txtTiempo.Text));
+            txtCapital.Text = "" + capital;
             limpiar();
+        
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -287,6 +287,11 @@ namespace Calculadora
             this.Close();
             Form1 menuu = new Form1();
             menuu.Show();
+        }
+
+        private void CapitalCompuesto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

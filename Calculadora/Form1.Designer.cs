@@ -67,28 +67,28 @@
             // capitalToolStripMenuItem
             // 
             this.capitalToolStripMenuItem.Name = "capitalToolStripMenuItem";
-            this.capitalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.capitalToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.capitalToolStripMenuItem.Text = "Monto";
             this.capitalToolStripMenuItem.Click += new System.EventHandler(this.capitalToolStripMenuItem_Click);
             // 
             // capitalToolStripMenuItem1
             // 
             this.capitalToolStripMenuItem1.Name = "capitalToolStripMenuItem1";
-            this.capitalToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.capitalToolStripMenuItem1.Size = new System.Drawing.Size(150, 22);
             this.capitalToolStripMenuItem1.Text = "Capital";
             this.capitalToolStripMenuItem1.Click += new System.EventHandler(this.capitalToolStripMenuItem1_Click);
             // 
             // tasaDeInteresToolStripMenuItem
             // 
             this.tasaDeInteresToolStripMenuItem.Name = "tasaDeInteresToolStripMenuItem";
-            this.tasaDeInteresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tasaDeInteresToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.tasaDeInteresToolStripMenuItem.Text = "Tasa de Interes";
             this.tasaDeInteresToolStripMenuItem.Click += new System.EventHandler(this.tasaDeInteresToolStripMenuItem_Click);
             // 
             // tiempoToolStripMenuItem
             // 
             this.tiempoToolStripMenuItem.Name = "tiempoToolStripMenuItem";
-            this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.tiempoToolStripMenuItem.Text = "Tiempo";
             this.tiempoToolStripMenuItem.Click += new System.EventHandler(this.tiempoToolStripMenuItem_Click);
             // 
@@ -115,6 +115,7 @@
             this.capitalToolStripMenuItem2.Name = "capitalToolStripMenuItem2";
             this.capitalToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.capitalToolStripMenuItem2.Text = "Capital";
+            this.capitalToolStripMenuItem2.Click += new System.EventHandler(this.capitalToolStripMenuItem2_Click_1);
             // 
             // tasaDeInteresToolStripMenuItem1
             // 
