@@ -378,6 +378,8 @@ namespace Calculadora
         private void btnRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+            Form1 menuu = new Form1();
+            menuu.Show();
         }
     }
 }

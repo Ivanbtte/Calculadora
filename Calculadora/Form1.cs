@@ -21,18 +21,21 @@ namespace Calculadora
         {
             MontoSimple montoSimple = new MontoSimple();
             montoSimple.Show();
+            this.Hide();
         }
 
         private void capitalToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             CapitalSimple capitalSimple = new CapitalSimple();
             capitalSimple.Show();
+            this.Hide();
         }
 
         private void tasaDeInteresToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TasaSimple tasaSimple = new TasaSimple();
             tasaSimple.Show();
+            this.Hide();
         }
 
         private void tiempoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,7 +43,14 @@ namespace Calculadora
 
             TiempoSimple tiempoSimple = new TiempoSimple();
             tiempoSimple.Show();
-            this.Visible = false;
+            this.Hide();
+        }
+
+        private void montoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MontoCompuesto montoCompuesto = new MontoCompuesto();
+            montoCompuesto.Show();
+            this.Hide();
         }
     }
 }
