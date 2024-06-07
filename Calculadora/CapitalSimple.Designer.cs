@@ -271,6 +271,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(692, 747);
+            this.ControlBox = false;
             this.Controls.Add(this.lblFin);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.dtpFin);
@@ -292,6 +293,8 @@
             this.Controls.Add(this.lblCapital);
             this.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "CapitalSimple";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CapitalSimple";
             this.ResumeLayout(false);
             this.PerformLayout();

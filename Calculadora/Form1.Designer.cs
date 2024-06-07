@@ -30,11 +30,15 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.interesSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.interesCompuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capitalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tasaDeInteresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tiempoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.interesCompuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.montoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.capitalToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tasaDeInteresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiempoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,12 +63,6 @@
             this.interesSimpleToolStripMenuItem.Name = "interesSimpleToolStripMenuItem";
             this.interesSimpleToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.interesSimpleToolStripMenuItem.Text = "Interes Simple";
-            // 
-            // interesCompuestoToolStripMenuItem
-            // 
-            this.interesCompuestoToolStripMenuItem.Name = "interesCompuestoToolStripMenuItem";
-            this.interesCompuestoToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
-            this.interesCompuestoToolStripMenuItem.Text = "Interes Compuesto";
             // 
             // capitalToolStripMenuItem
             // 
@@ -94,6 +92,42 @@
             this.tiempoToolStripMenuItem.Text = "Tiempo";
             this.tiempoToolStripMenuItem.Click += new System.EventHandler(this.tiempoToolStripMenuItem_Click);
             // 
+            // interesCompuestoToolStripMenuItem
+            // 
+            this.interesCompuestoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.montoToolStripMenuItem,
+            this.capitalToolStripMenuItem2,
+            this.tasaDeInteresToolStripMenuItem1,
+            this.tiempoToolStripMenuItem1});
+            this.interesCompuestoToolStripMenuItem.Name = "interesCompuestoToolStripMenuItem";
+            this.interesCompuestoToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.interesCompuestoToolStripMenuItem.Text = "Interes Compuesto";
+            // 
+            // montoToolStripMenuItem
+            // 
+            this.montoToolStripMenuItem.Name = "montoToolStripMenuItem";
+            this.montoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.montoToolStripMenuItem.Text = "Monto";
+            this.montoToolStripMenuItem.Click += new System.EventHandler(this.montoToolStripMenuItem_Click);
+            // 
+            // capitalToolStripMenuItem2
+            // 
+            this.capitalToolStripMenuItem2.Name = "capitalToolStripMenuItem2";
+            this.capitalToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.capitalToolStripMenuItem2.Text = "Capital";
+            // 
+            // tasaDeInteresToolStripMenuItem1
+            // 
+            this.tasaDeInteresToolStripMenuItem1.Name = "tasaDeInteresToolStripMenuItem1";
+            this.tasaDeInteresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tasaDeInteresToolStripMenuItem1.Text = "Tasa de interes";
+            // 
+            // tiempoToolStripMenuItem1
+            // 
+            this.tiempoToolStripMenuItem1.Name = "tiempoToolStripMenuItem1";
+            this.tiempoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.tiempoToolStripMenuItem1.Text = "Tiempo";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -102,6 +136,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -119,6 +154,10 @@
         private System.Windows.Forms.ToolStripMenuItem capitalToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tasaDeInteresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tiempoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem montoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem capitalToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem tasaDeInteresToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem tiempoToolStripMenuItem1;
     }
 }
 

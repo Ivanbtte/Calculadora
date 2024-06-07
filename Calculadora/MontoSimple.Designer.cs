@@ -265,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(629, 661);
+            this.ControlBox = false;
             this.Controls.Add(this.lblFin);
             this.Controls.Add(this.lblInicio);
             this.Controls.Add(this.dtpFin);
@@ -286,7 +287,10 @@
             this.Controls.Add(this.lblCapital);
             this.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "MontoSimple";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MontoSimple";
             this.Load += new System.EventHandler(this.MontoSimple_Load);
             this.ResumeLayout(false);
