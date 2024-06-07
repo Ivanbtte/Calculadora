@@ -296,7 +296,6 @@ namespace Calculadora
                 }
 
                 capital = Convert.ToInt32(txtMonto.Text) / (1 + (interes * Convert.ToInt32(txtTiempo.Text)));
-                MessageBox.Show(Convert.ToString(capital));
                 txtCapital.Text = "" + capital;
             }
             else if (rdbReal.Checked)
@@ -335,7 +334,6 @@ namespace Calculadora
                 }
 
                 capital = Convert.ToInt32(txtMonto.Text) / (1 + (interes * tiempoReal));
-                MessageBox.Show(Convert.ToString(capital));
                 txtCapital.Text = "" + capital;
             }
 
@@ -368,6 +366,11 @@ namespace Calculadora
             dtpFin.Enabled = true;
             lblInicio.Visible = true;
             lblFin.Visible = true;
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -131,6 +131,7 @@
             this.btnRegresar.TabIndex = 34;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnCalcular
             // 
@@ -268,6 +269,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(692, 747);
             this.Controls.Add(this.lblFin);
             this.Controls.Add(this.lblInicio);
