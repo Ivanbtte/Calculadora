@@ -59,5 +59,12 @@ namespace Calculadora
             capitalCompuesto.Show();
             this.Hide();
         }
+
+        private void tasaDeInteresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TasaCompuesto tasaCompuesto = new TasaCompuesto();
+            tasaCompuesto.Show();
+            this.Hide();
+        }
     }
 }
