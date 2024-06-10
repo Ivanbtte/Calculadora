@@ -66,5 +66,12 @@ namespace Calculadora
             tasaCompuesto.Show();
             this.Hide();
         }
+
+        private void tiempoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            TiempoCompuesto tiempoCompuesto = new TiempoCompuesto();
+            tiempoCompuesto.Show();
+            this.Hide();
+        }
     }
 }
