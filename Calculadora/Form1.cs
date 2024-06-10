@@ -73,5 +73,41 @@ namespace Calculadora
             tiempoCompuesto.Show();
             this.Hide();
         }
+
+        private void montoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MontoVencida montoVencida = new MontoVencida();
+            montoVencida.Show();
+            this.Hide();
+        }
+
+        private void anualidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AnualidadVencidaA anualidadVencidaA = new AnualidadVencidaA();
+            anualidadVencidaA.Show();
+            this.Hide();
+        }
+
+        private void periodosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PeriodosVencida periodosVencida = new PeriodosVencida();
+            periodosVencida.Show();
+            this.Hide();
+        }
+
+        private void valorPresenteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void anualidadToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void periodosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace Calculadora
         {
             txtCapital.Clear();
             txtMonto.Clear();
-            txtTiempo.Clear();
+            txtInteres.Clear();
         }
 
         private bool ValidarCampos()
