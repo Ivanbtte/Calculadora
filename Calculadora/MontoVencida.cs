@@ -5,27 +5,26 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class MontoCompuesto : Form
+    public partial class MontoVencida : Form
     {
 
         double interes;
         double monto;
         string tInteres;
 
-        public MontoCompuesto()
+        public MontoVencida()
         {
             InitializeComponent();
         }
 
         private void limpiar()
         {
-            txtCapital.Clear();
+            txtAnualidad.Clear();
             cmbInteres.SelectedIndex = 0;
             txtInteres.Clear();
             txtTiempo.Clear();
@@ -58,6 +57,11 @@ namespace Calculadora
             }
 
             return true;
+        }
+
+        private void MontoVencida_Load(object sender, EventArgs e)
+        {
+            
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -282,8 +286,8 @@ namespace Calculadora
                     break;
             }
 
-            monto = Convert.ToDouble(txtCapital.Text) * Math.Pow(1 + interes, Convert.ToInt32(txtTiempo.Text));
-            txtMonto.Text = "" + monto;
+            monto = Convert.ToDouble(txtAnualidad.Text)*((Math.Pow((1+interes), Convert.ToDouble(txtTiempo.Text)) -1)/interes);
+            txtMonto.Text = monto.ToString("F2");
             limpiar();
         }
 
