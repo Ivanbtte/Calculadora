@@ -129,6 +129,7 @@
             this.tiempoToolStripMenuItem1.Name = "tiempoToolStripMenuItem1";
             this.tiempoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.tiempoToolStripMenuItem1.Text = "Tiempo";
+            this.tiempoToolStripMenuItem1.Click += new System.EventHandler(this.tiempoToolStripMenuItem1_Click);
             // 
             // Form1
             // 

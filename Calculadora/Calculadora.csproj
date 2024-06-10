@@ -90,6 +90,12 @@
     <Compile Include="TasaSimple.Designer.cs">
       <DependentUpon>TasaSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="TiempoCompuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiempoCompuesto.Designer.cs">
+      <DependentUpon>TiempoCompuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="TiempoSimple.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
     <EmbeddedResource Include="TasaCompuesto.resx">
       <DependentUpon>TasaCompuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiempoCompuesto.resx">
+      <DependentUpon>TiempoCompuesto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
