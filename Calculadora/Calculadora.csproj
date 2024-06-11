@@ -120,6 +120,9 @@
     <Compile Include="TiempoSimple.Designer.cs">
       <DependentUpon>TiempoSimple.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnualidadVencidaA.resx">
+      <DependentUpon>AnualidadVencidaA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapitalCompuesto.resx">
       <DependentUpon>CapitalCompuesto.cs</DependentUpon>
     </EmbeddedResource>
