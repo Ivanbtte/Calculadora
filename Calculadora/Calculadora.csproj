@@ -129,8 +129,14 @@
     <EmbeddedResource Include="TasaCompuesto.resx">
       <DependentUpon>TasaCompuesto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TasaSimple.resx">
+      <DependentUpon>TasaSimple.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TiempoCompuesto.resx">
       <DependentUpon>TiempoCompuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiempoSimple.resx">
+      <DependentUpon>TiempoSimple.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

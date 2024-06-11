@@ -12,9 +12,63 @@ namespace Calculadora
 {
     public partial class TiempoSimple : Form
     {
+        double tiempo;
         public TiempoSimple()
         {
             InitializeComponent();
+        }
+        private void limpiar()
+        {
+            txtCapital.Clear();
+            txtMonto.Clear();
+            txtInteres.Clear();
+
+
+        }
+        private bool ValidarCampos()
+        {
+            // Verificar todos los TextBox, excepto txtMonto
+            foreach (Control control in this.Controls)
+            {
+                if (control is TextBox && control != txtTiempo)
+                {
+                    TextBox textBox = control as TextBox;
+                    if (string.IsNullOrWhiteSpace(textBox.Text))
+                    {
+                        MessageBox.Show("Todos los campos deben estar llenos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                }
+                else if (control is ComboBox)
+                {
+                    ComboBox comboBox = control as ComboBox;
+                    if (comboBox.SelectedIndex == -1)
+                    {
+                        MessageBox.Show("Todos los campos deben estar llenos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 menuu = new Form1();
+            menuu.Show();
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            // Verificar los campos antes de proceder
+            if (!ValidarCampos())
+            {
+                return;
+            }
+            tiempo = ((Convert.ToDouble(txtMonto.Text) / Convert.ToDouble(txtCapital.Text)-1)) / Convert.ToDouble(txtInteres.Text);
+            txtTiempo.Text = tiempo.ToString("F2") + " periodos " + cmbInteres.Text;
+            limpiar();
         }
     }
 }
