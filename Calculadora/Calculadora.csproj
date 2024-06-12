@@ -141,6 +141,9 @@
     <EmbeddedResource Include="MontoVencida.resx">
       <DependentUpon>MontoVencida.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PeriodosVencida.resx">
+      <DependentUpon>PeriodosVencida.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -190,6 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(197)))));
             this.ClientSize = new System.Drawing.Size(441, 590);
+            this.ControlBox = false;
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.label1);
@@ -206,6 +207,7 @@
             this.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MontoVencida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MontoVencida";
             this.Load += new System.EventHandler(this.MontoVencida_Load);
             this.ResumeLayout(false);
