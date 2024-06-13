@@ -109,5 +109,26 @@ namespace Calculadora
         {
 
         }
+
+        private void montoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            MontoAnticipada montoAnticipada = new MontoAnticipada();
+            montoAnticipada.Show();
+            this.Hide();
+        }
+
+        private void anualidadToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            AnualidadAnticipadaA anualidadAnticipadaA = new AnualidadAnticipadaA();
+            anualidadAnticipadaA.Show();
+            this.Hide();
+        }
+
+        private void periodosToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            PeriodoAnticipada periodoAnticipada = new PeriodoAnticipada();
+            periodoAnticipada.Show();
+            this.Hide();
+        }
     }
 }

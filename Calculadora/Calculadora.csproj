@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnualidadAnticipadaA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnualidadAnticipadaA.Designer.cs">
+      <DependentUpon>AnualidadAnticipadaA.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnualidadVencidaA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MontoAnticipada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MontoAnticipada.Designer.cs">
+      <DependentUpon>MontoAnticipada.cs</DependentUpon>
+    </Compile>
     <Compile Include="MontoCompuesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     </Compile>
     <Compile Include="MontoVencida.Designer.cs">
       <DependentUpon>MontoVencida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeriodoAnticipada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodoAnticipada.Designer.cs">
+      <DependentUpon>PeriodoAnticipada.cs</DependentUpon>
     </Compile>
     <Compile Include="PeriodosVencida.cs">
       <SubType>Form</SubType>
@@ -120,6 +138,9 @@
     <Compile Include="TiempoSimple.Designer.cs">
       <DependentUpon>TiempoSimple.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnualidadAnticipadaA.resx">
+      <DependentUpon>AnualidadAnticipadaA.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnualidadVencidaA.resx">
       <DependentUpon>AnualidadVencidaA.cs</DependentUpon>
     </EmbeddedResource>
@@ -132,6 +153,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MontoAnticipada.resx">
+      <DependentUpon>MontoAnticipada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MontoCompuesto.resx">
       <DependentUpon>MontoCompuesto.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MontoVencida.resx">
       <DependentUpon>MontoVencida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeriodoAnticipada.resx">
+      <DependentUpon>PeriodoAnticipada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PeriodosVencida.resx">
       <DependentUpon>PeriodosVencida.cs</DependentUpon>
