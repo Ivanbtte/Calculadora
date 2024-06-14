@@ -52,6 +52,12 @@
     <Compile Include="AnualidadAnticipadaA.Designer.cs">
       <DependentUpon>AnualidadAnticipadaA.cs</DependentUpon>
     </Compile>
+    <Compile Include="VP_Aanualidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VP_Aanualidades.Designer.cs">
+      <DependentUpon>VP_Aanualidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnualidadVencidaA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,18 @@
     <Compile Include="TiempoSimple.Designer.cs">
       <DependentUpon>TiempoSimple.cs</DependentUpon>
     </Compile>
+    <Compile Include="VP_Anualidades_Vencidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VP_Anualidades_Vencidas.Designer.cs">
+      <DependentUpon>VP_Anualidades_Vencidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VP_Tiempo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VP_Tiempo.Designer.cs">
+      <DependentUpon>VP_Tiempo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnualidadAnticipadaA.resx">
       <DependentUpon>AnualidadAnticipadaA.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +209,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TiempoSimple.resx">
       <DependentUpon>TiempoSimple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VP_Aanualidades.resx">
+      <DependentUpon>VP_Aanualidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VP_Anualidades_Vencidas.resx">
+      <DependentUpon>VP_Anualidades_Vencidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VP_Tiempo.resx">
+      <DependentUpon>VP_Tiempo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

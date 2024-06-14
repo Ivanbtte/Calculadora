@@ -97,17 +97,23 @@ namespace Calculadora
 
         private void valorPresenteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            VP_Anualidades_Vencidas ValorPresente = new VP_Anualidades_Vencidas();
+            ValorPresente.Show();
+            this.Hide();
         }
 
         private void anualidadToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            VP_Aanualidades Aanualidades = new VP_Aanualidades();
+            Aanualidades.Show();
+            this.Hide();
         }
 
         private void periodosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            VP_Tiempo Periodo = new VP_Tiempo();
+            Periodo.Show();
+            this.Hide();
         }
 
         private void montoToolStripMenuItem2_Click(object sender, EventArgs e)
