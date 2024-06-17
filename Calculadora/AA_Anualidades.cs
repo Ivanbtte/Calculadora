@@ -10,9 +10,10 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class VP_Aanualidades : Form
+    public partial class AA_Anualidades : Form
     {
-        public VP_Aanualidades()
+
+        public AA_Anualidades()
         {
             InitializeComponent();
         }
@@ -29,6 +30,7 @@ namespace Calculadora
             txtTiempo.Clear();
             cmbTiempo.SelectedIndex = 0;
         }
+
         private bool ValidarCampos()
         {
             // Verificar todos los TextBox, excepto txtMonto
@@ -278,10 +280,10 @@ namespace Calculadora
                     Console.WriteLine("Opción no reconocida. Por favor, introduce una opción válida.");
                     break;
             }
-            
-            anualidad = Convert.ToDouble(txtVP.Text) / ((1-(Math.Pow((1 + interes), -Convert.ToDouble(txtTiempo.Text)))) / interes);
+
+            anualidad = Convert.ToDouble(txtVP.Text) / (((1 - (Math.Pow((1 + interes), -Convert.ToDouble(txtTiempo.Text)+1))) / interes)+1);
             txtAnua.Text = anualidad.ToString("F2");
-            
+
             limpiar();
         }
 

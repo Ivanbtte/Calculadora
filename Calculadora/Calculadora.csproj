@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AA_Anualidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AA_Anualidades.Designer.cs">
+      <DependentUpon>AA_Anualidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AA_Periodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AA_Periodos.Designer.cs">
+      <DependentUpon>AA_Periodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AA_VP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AA_VP.Designer.cs">
+      <DependentUpon>AA_VP.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnualidadAnticipadaA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +174,15 @@
     <Compile Include="VP_Tiempo.Designer.cs">
       <DependentUpon>VP_Tiempo.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AA_Anualidades.resx">
+      <DependentUpon>AA_Anualidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AA_Periodos.resx">
+      <DependentUpon>AA_Periodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AA_VP.resx">
+      <DependentUpon>AA_VP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnualidadAnticipadaA.resx">
       <DependentUpon>AnualidadAnticipadaA.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +224,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="TasaCompuesto.resx">
       <DependentUpon>TasaCompuesto.cs</DependentUpon>
@@ -231,6 +259,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\tasa-de-interes.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

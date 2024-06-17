@@ -136,5 +136,26 @@ namespace Calculadora
             periodoAnticipada.Show();
             this.Hide();
         }
+
+        private void valorPresenteToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            AA_VP ValorPresente = new AA_VP();
+            ValorPresente.Show();
+            this.Hide();
+        }
+
+        private void anualidadToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AA_Anualidades anualidades = new AA_Anualidades();
+            anualidades.Show();
+            this.Hide();
+        }
+
+        private void periodosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AA_Periodos perido = new AA_Periodos();
+            perido.Show();
+            this.Hide();
+        }
     }
 }

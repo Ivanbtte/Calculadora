@@ -10,9 +10,13 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-
-    public partial class VP_Tiempo : Form
+    public partial class AA_Periodos : Form
     {
+        public AA_Periodos()
+        {
+            InitializeComponent();
+        }
+
         double periodo;
         double interes;
         private void limpiar()
@@ -21,7 +25,7 @@ namespace Calculadora
             cmbInteres.SelectedIndex = 0;
             txtInteres.Clear();
             txtVP.Clear();
-            
+
         }
 
         private bool ValidarCampos()
@@ -50,10 +54,6 @@ namespace Calculadora
             }
 
             return true;
-        }
-        public VP_Tiempo()
-        {
-            InitializeComponent();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
@@ -99,8 +99,8 @@ namespace Calculadora
                     Console.WriteLine("Opción no reconocida. Por favor, introduce una opción válida.");
                     return;
             }
-            
-            periodo = -Math.Log((-(Convert.ToDouble(txtVP.Text) * interes) / Convert.ToDouble(txtAnualidad.Text)) + 1) / Math.Log(1 + interes);
+           
+            periodo = (-Math.Log((-(Convert.ToDouble(txtVP.Text) * interes) / Convert.ToDouble(txtAnualidad.Text)) + interes + 1)  / Math.Log(1 + interes)-1);
             txtPeriodo.Text = periodo.ToString("F2") + " Periodos";
             limpiar();
         }
