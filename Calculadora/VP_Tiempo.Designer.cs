@@ -167,7 +167,7 @@
             // 
             this.lblAnualidad.AutoSize = true;
             this.lblAnualidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAnualidad.Location = new System.Drawing.Point(187, 48);
+            this.lblAnualidad.Location = new System.Drawing.Point(174, 46);
             this.lblAnualidad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAnualidad.Name = "lblAnualidad";
             this.lblAnualidad.Size = new System.Drawing.Size(89, 20);

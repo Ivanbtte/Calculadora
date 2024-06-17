@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.interesSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.capitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.capitalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.tasaDeInteresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tiempoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interesCompuestoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.montoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.capitalToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,13 +45,18 @@
             this.periodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anualidadesAnticipadasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.valorPresenteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.anualidadesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.valorPresenteToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.anualidadToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.periodosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.anualidadesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.montoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.anualidadToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.periodosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.interesSimpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.capitalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.capitalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tasaDeInteresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tiempoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,45 +72,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // interesSimpleToolStripMenuItem
-            // 
-            this.interesSimpleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.capitalToolStripMenuItem,
-            this.capitalToolStripMenuItem1,
-            this.tasaDeInteresToolStripMenuItem,
-            this.tiempoToolStripMenuItem});
-            this.interesSimpleToolStripMenuItem.Name = "interesSimpleToolStripMenuItem";
-            this.interesSimpleToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
-            this.interesSimpleToolStripMenuItem.Text = "Interes Simple";
-            // 
-            // capitalToolStripMenuItem
-            // 
-            this.capitalToolStripMenuItem.Name = "capitalToolStripMenuItem";
-            this.capitalToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.capitalToolStripMenuItem.Text = "Monto";
-            this.capitalToolStripMenuItem.Click += new System.EventHandler(this.capitalToolStripMenuItem_Click);
-            // 
-            // capitalToolStripMenuItem1
-            // 
-            this.capitalToolStripMenuItem1.Name = "capitalToolStripMenuItem1";
-            this.capitalToolStripMenuItem1.Size = new System.Drawing.Size(150, 22);
-            this.capitalToolStripMenuItem1.Text = "Capital";
-            this.capitalToolStripMenuItem1.Click += new System.EventHandler(this.capitalToolStripMenuItem1_Click);
-            // 
-            // tasaDeInteresToolStripMenuItem
-            // 
-            this.tasaDeInteresToolStripMenuItem.Name = "tasaDeInteresToolStripMenuItem";
-            this.tasaDeInteresToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.tasaDeInteresToolStripMenuItem.Text = "Tasa de Interes";
-            this.tasaDeInteresToolStripMenuItem.Click += new System.EventHandler(this.tasaDeInteresToolStripMenuItem_Click);
-            // 
-            // tiempoToolStripMenuItem
-            // 
-            this.tiempoToolStripMenuItem.Name = "tiempoToolStripMenuItem";
-            this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
-            this.tiempoToolStripMenuItem.Text = "Tiempo";
-            this.tiempoToolStripMenuItem.Click += new System.EventHandler(this.tiempoToolStripMenuItem_Click);
             // 
             // interesCompuestoToolStripMenuItem
             // 
@@ -167,27 +128,27 @@
             this.anualidadToolStripMenuItem1,
             this.periodosToolStripMenuItem1});
             this.valorPresenteToolStripMenuItem.Name = "valorPresenteToolStripMenuItem";
-            this.valorPresenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.valorPresenteToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.valorPresenteToolStripMenuItem.Text = "Valor presente";
             // 
             // valorPresenteToolStripMenuItem1
             // 
             this.valorPresenteToolStripMenuItem1.Name = "valorPresenteToolStripMenuItem1";
-            this.valorPresenteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.valorPresenteToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.valorPresenteToolStripMenuItem1.Text = "Valor presente";
             this.valorPresenteToolStripMenuItem1.Click += new System.EventHandler(this.valorPresenteToolStripMenuItem1_Click);
             // 
             // anualidadToolStripMenuItem1
             // 
             this.anualidadToolStripMenuItem1.Name = "anualidadToolStripMenuItem1";
-            this.anualidadToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.anualidadToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.anualidadToolStripMenuItem1.Text = "Anualidad";
             this.anualidadToolStripMenuItem1.Click += new System.EventHandler(this.anualidadToolStripMenuItem1_Click);
             // 
             // periodosToolStripMenuItem1
             // 
             this.periodosToolStripMenuItem1.Name = "periodosToolStripMenuItem1";
-            this.periodosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.periodosToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.periodosToolStripMenuItem1.Text = "Periodos";
             this.periodosToolStripMenuItem1.Click += new System.EventHandler(this.periodosToolStripMenuItem1_Click);
             // 
@@ -198,27 +159,27 @@
             this.anualidadToolStripMenuItem,
             this.periodosToolStripMenuItem});
             this.anualidadesToolStripMenuItem.Name = "anualidadesToolStripMenuItem";
-            this.anualidadesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.anualidadesToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
             this.anualidadesToolStripMenuItem.Text = "Anualidades";
             // 
             // montoToolStripMenuItem1
             // 
             this.montoToolStripMenuItem1.Name = "montoToolStripMenuItem1";
-            this.montoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.montoToolStripMenuItem1.Size = new System.Drawing.Size(128, 22);
             this.montoToolStripMenuItem1.Text = "Monto";
             this.montoToolStripMenuItem1.Click += new System.EventHandler(this.montoToolStripMenuItem1_Click);
             // 
             // anualidadToolStripMenuItem
             // 
             this.anualidadToolStripMenuItem.Name = "anualidadToolStripMenuItem";
-            this.anualidadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.anualidadToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.anualidadToolStripMenuItem.Text = "Anualidad";
             this.anualidadToolStripMenuItem.Click += new System.EventHandler(this.anualidadToolStripMenuItem_Click);
             // 
             // periodosToolStripMenuItem
             // 
             this.periodosToolStripMenuItem.Name = "periodosToolStripMenuItem";
-            this.periodosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.periodosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.periodosToolStripMenuItem.Text = "Periodos";
             this.periodosToolStripMenuItem.Click += new System.EventHandler(this.periodosToolStripMenuItem_Click);
             // 
@@ -238,8 +199,29 @@
             this.anualidadToolStripMenuItem2,
             this.periodosToolStripMenuItem2});
             this.valorPresenteToolStripMenuItem2.Name = "valorPresenteToolStripMenuItem2";
-            this.valorPresenteToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.valorPresenteToolStripMenuItem2.Size = new System.Drawing.Size(148, 22);
             this.valorPresenteToolStripMenuItem2.Text = "Valor Presente";
+            // 
+            // valorPresenteToolStripMenuItem3
+            // 
+            this.valorPresenteToolStripMenuItem3.Name = "valorPresenteToolStripMenuItem3";
+            this.valorPresenteToolStripMenuItem3.Size = new System.Drawing.Size(148, 22);
+            this.valorPresenteToolStripMenuItem3.Text = "Valor Presente";
+            this.valorPresenteToolStripMenuItem3.Click += new System.EventHandler(this.valorPresenteToolStripMenuItem3_Click);
+            // 
+            // anualidadToolStripMenuItem2
+            // 
+            this.anualidadToolStripMenuItem2.Name = "anualidadToolStripMenuItem2";
+            this.anualidadToolStripMenuItem2.Size = new System.Drawing.Size(148, 22);
+            this.anualidadToolStripMenuItem2.Text = "Anualidad";
+            this.anualidadToolStripMenuItem2.Click += new System.EventHandler(this.anualidadToolStripMenuItem2_Click);
+            // 
+            // periodosToolStripMenuItem2
+            // 
+            this.periodosToolStripMenuItem2.Name = "periodosToolStripMenuItem2";
+            this.periodosToolStripMenuItem2.Size = new System.Drawing.Size(148, 22);
+            this.periodosToolStripMenuItem2.Text = "Periodos";
+            this.periodosToolStripMenuItem2.Click += new System.EventHandler(this.periodosToolStripMenuItem2_Click);
             // 
             // anualidadesToolStripMenuItem1
             // 
@@ -248,47 +230,70 @@
             this.anualidadToolStripMenuItem3,
             this.periodosToolStripMenuItem3});
             this.anualidadesToolStripMenuItem1.Name = "anualidadesToolStripMenuItem1";
-            this.anualidadesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.anualidadesToolStripMenuItem1.Size = new System.Drawing.Size(148, 22);
             this.anualidadesToolStripMenuItem1.Text = "Anualidades";
-            // 
-            // valorPresenteToolStripMenuItem3
-            // 
-            this.valorPresenteToolStripMenuItem3.Name = "valorPresenteToolStripMenuItem3";
-            this.valorPresenteToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.valorPresenteToolStripMenuItem3.Text = "Valor Presente";
-            // 
-            // anualidadToolStripMenuItem2
-            // 
-            this.anualidadToolStripMenuItem2.Name = "anualidadToolStripMenuItem2";
-            this.anualidadToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.anualidadToolStripMenuItem2.Text = "Anualidad";
-            // 
-            // periodosToolStripMenuItem2
-            // 
-            this.periodosToolStripMenuItem2.Name = "periodosToolStripMenuItem2";
-            this.periodosToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.periodosToolStripMenuItem2.Text = "Periodos";
             // 
             // montoToolStripMenuItem2
             // 
             this.montoToolStripMenuItem2.Name = "montoToolStripMenuItem2";
-            this.montoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.montoToolStripMenuItem2.Size = new System.Drawing.Size(128, 22);
             this.montoToolStripMenuItem2.Text = "Monto";
             this.montoToolStripMenuItem2.Click += new System.EventHandler(this.montoToolStripMenuItem2_Click);
             // 
             // anualidadToolStripMenuItem3
             // 
             this.anualidadToolStripMenuItem3.Name = "anualidadToolStripMenuItem3";
-            this.anualidadToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.anualidadToolStripMenuItem3.Size = new System.Drawing.Size(128, 22);
             this.anualidadToolStripMenuItem3.Text = "Anualidad";
             this.anualidadToolStripMenuItem3.Click += new System.EventHandler(this.anualidadToolStripMenuItem3_Click);
             // 
             // periodosToolStripMenuItem3
             // 
             this.periodosToolStripMenuItem3.Name = "periodosToolStripMenuItem3";
-            this.periodosToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.periodosToolStripMenuItem3.Size = new System.Drawing.Size(128, 22);
             this.periodosToolStripMenuItem3.Text = "Periodos";
             this.periodosToolStripMenuItem3.Click += new System.EventHandler(this.periodosToolStripMenuItem3_Click);
+            // 
+            // interesSimpleToolStripMenuItem
+            // 
+            this.interesSimpleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.capitalToolStripMenuItem,
+            this.capitalToolStripMenuItem1,
+            this.tasaDeInteresToolStripMenuItem,
+            this.tiempoToolStripMenuItem});
+            this.interesSimpleToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.interesSimpleToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.interesSimpleToolStripMenuItem.Name = "interesSimpleToolStripMenuItem";
+            this.interesSimpleToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.interesSimpleToolStripMenuItem.Text = "Interes Simple";
+            // 
+            // capitalToolStripMenuItem
+            // 
+            this.capitalToolStripMenuItem.Name = "capitalToolStripMenuItem";
+            this.capitalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.capitalToolStripMenuItem.Text = "Monto";
+            this.capitalToolStripMenuItem.Click += new System.EventHandler(this.capitalToolStripMenuItem_Click);
+            // 
+            // capitalToolStripMenuItem1
+            // 
+            this.capitalToolStripMenuItem1.Name = "capitalToolStripMenuItem1";
+            this.capitalToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.capitalToolStripMenuItem1.Text = "Capital";
+            this.capitalToolStripMenuItem1.Click += new System.EventHandler(this.capitalToolStripMenuItem1_Click);
+            // 
+            // tasaDeInteresToolStripMenuItem
+            // 
+            this.tasaDeInteresToolStripMenuItem.Name = "tasaDeInteresToolStripMenuItem";
+            this.tasaDeInteresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tasaDeInteresToolStripMenuItem.Text = "Tasa de Interes";
+            this.tasaDeInteresToolStripMenuItem.Click += new System.EventHandler(this.tasaDeInteresToolStripMenuItem_Click);
+            // 
+            // tiempoToolStripMenuItem
+            // 
+            this.tiempoToolStripMenuItem.Name = "tiempoToolStripMenuItem";
+            this.tiempoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tiempoToolStripMenuItem.Text = "Tiempo";
+            this.tiempoToolStripMenuItem.Click += new System.EventHandler(this.tiempoToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -299,7 +304,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

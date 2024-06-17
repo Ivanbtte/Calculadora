@@ -10,20 +10,15 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class VP_Aanualidades : Form
+    public partial class AA_VP : Form
     {
-        public VP_Aanualidades()
-        {
-            InitializeComponent();
-        }
-
         double interes;
-        double anualidad;
+        double ValorPresente;
         string tInteres;
 
         private void limpiar()
         {
-            txtVP.Clear();
+            txtAnualidad.Clear();
             cmbInteres.SelectedIndex = 0;
             txtInteres.Clear();
             txtTiempo.Clear();
@@ -34,7 +29,7 @@ namespace Calculadora
             // Verificar todos los TextBox, excepto txtMonto
             foreach (Control control in this.Controls)
             {
-                if (control is TextBox && control != txtAnua)
+                if (control is TextBox && control != txtVP)
                 {
                     TextBox textBox = control as TextBox;
                     if (string.IsNullOrWhiteSpace(textBox.Text))
@@ -55,6 +50,17 @@ namespace Calculadora
             }
 
             return true;
+        }
+        public AA_VP()
+        {
+            InitializeComponent();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 menuu = new Form1();
+            menuu.Show();
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -278,18 +284,10 @@ namespace Calculadora
                     Console.WriteLine("Opción no reconocida. Por favor, introduce una opción válida.");
                     break;
             }
-            
-            anualidad = Convert.ToDouble(txtVP.Text) / ((1-(Math.Pow((1 + interes), -Convert.ToDouble(txtTiempo.Text)))) / interes);
-            txtAnua.Text = anualidad.ToString("F2");
-            
+            //monto = anualidad * ((1 - Math.Pow((1 + interes), -tiempoConvertido)) / interes);
+            ValorPresente = Convert.ToDouble(txtAnualidad.Text) * (((1 - (Math.Pow((1 + interes), -Convert.ToDouble(txtTiempo.Text)+1))) / interes)+1);
+            txtVP.Text = ValorPresente.ToString("F2");
             limpiar();
-        }
-
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form1 menuu = new Form1();
-            menuu.Show();
         }
     }
 }
