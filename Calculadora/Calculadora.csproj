@@ -263,5 +263,20 @@
   <ItemGroup>
     <None Include="bin\Debug\IMG\tasa-de-interes.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\InteresCompuesto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\AV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\AA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\IMG\calculadora.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
